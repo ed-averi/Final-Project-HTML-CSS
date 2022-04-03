@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+header .navbar {
+  background: #ff512f;
+  /* fallback for old browsers */
+  background: var(--bggradient);
+  
+}
+
+header a {
+  font-family: var(--Sniglet-font);
+  font-family: var(--Roboto);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+
+
+header .nav-link:hover {
+  color: rgb(39, 24, 179);
+}
+
+header{
+  min-height:100vh;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-       */
+
+  display: flex;
+  align-items: center;
+}
+
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+header .nav-item {
+  padding: 0.9em;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+
+header .nav-link:hover {
+  color: rgb(0, 0, 0);
+}
+
